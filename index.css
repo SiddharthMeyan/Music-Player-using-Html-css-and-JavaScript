@@ -14,7 +14,7 @@
 }
 
 .container {
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
   font-family: "Helvetica Neue", sans-serif;
 }
 .container-player {
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,8 +45,8 @@
 }
 
 h1 a {
-  font-size: 50px;
-  color: #bf2e97;
+  font-size: 40px;
+  color: #350226;
   text-decoration: none;
   text-transform: uppercase;
 }
