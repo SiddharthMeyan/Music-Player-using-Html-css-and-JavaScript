@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- This is the music player -->
+    <div class="container-player box">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://images.hungama.com/c/1/7bd/077/36196412/36196412_300x300.jpg"
+          class="card-img-top imgcl"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 id="songname" class="card-title"></h5>
+          <i
+            id="play"
+            class="fa fa-play"
+            style="font-size: 36px; margin-left: 20px"
+          ></i>
+          <i
+            id="pause"
+            class="fa fa-pause"
+            style="font-size: 36px; margin-left: 20px"
+          ></i>
+          <p class="card-text"></p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>
+        <br />
+        <a href="#menu">My List</a>
+      </h1>
+
+      <div class="popover" id="menu">
+        <div class="content">
+          <a href="#" class="close"></a>
+          <div class="nav">
+            <ul class="nav_list">
+              <div class="nav_list_item">
+                <li><a href="#">Home</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
