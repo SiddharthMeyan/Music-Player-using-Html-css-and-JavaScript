@@ -16,6 +16,7 @@ const shuffle = () => {
   audio.play();
   musicShuffle = true;
   myaud(audio);
+  pauseBtn();
 };
 const shuffleImg = () => {
   randomInt = Math.ceil(Math.random() * music_list.length + -1);
@@ -44,6 +45,7 @@ stopMusic = () => {
   }
   audio.pause();
   audio.currentTime = 0;
+  playBtn();
 };
 
 pauseMusic = () => {
@@ -55,15 +57,13 @@ pauseMusic = () => {
 };
 
 pauseBtn = () => {
-  if (!audio.paused) {
-    playorpause.innerHTML = `<i
+  playorpause.innerHTML = `<i
       id="pause"
       onclick="pauseMusic()"
       class="fa fa-pause"
       style="font-size: 36px; margin-left: 20px"
       aria-hidden="true"
     ></i>`;
-  }
 };
 playBtn = () => {
   playorpause.innerHTML = `<i
