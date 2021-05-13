@@ -21,30 +21,36 @@
           class="card-img-top imgcl"
           alt="https://images.hungama.com/c/1/7bd/077/36196412/36196412_300x300.jpg"
         />
+
         <div class="card-body">
           <h5 id="songname" class="card-title"></h5>
-          <div style="margin-left: 92px">
+          <div style="margin-left: 82px">
+            <span id="playorpause">
+              <i
+                id="play"
+                onclick="playMusic('/music/starboy.mp3')"
+                class="fa fa-play"
+                style="font-size: 36px; margin-left: 20px"
+                aria-hidden="true"
+              ></i
+              >;
+            </span>
             <i
-              id="play"
-              onclick="playMusic()"
-              class="fa fa-play"
-              style="font-size: 36px; margin-left: 20px"
-              aria-hidden="true"
-            ></i>
-            <i
-              id="pause"
-              onclick="pauseMusic()"
-              class="fa fa-pause"
-              style="font-size: 36px; margin-left: 20px"
-              aria-hidden="true"
-            ></i>
-            <i
-              onclick="shuffle()"
-              class="fa fa-random"
+              id="stop"
+              onclick="stopMusic()"
+              class="fa fa-stop"
               style="font-size: 36px; margin-left: 20px"
               aria-hidden="true"
             ></i>
           </div>
+          <center>
+            <i
+              onclick="shuffle()"
+              class="fa fa-random"
+              style="font-size: 26px; margin-left: 20px; margin-top: 20px"
+              aria-hidden="true"
+            ></i>
+          </center>
           <br />
           <p class="card-text"></p>
           <h1>
@@ -58,7 +64,36 @@
               <div class="nav">
                 <ul class="nav_list">
                   <div class="nav_list_item">
-                    <li><a href="#">Home</a></li>
+                    <li>
+                      <a
+                        id="starboy"
+                        onclick="playMusic('/music/starboy.mp3')"
+                        href="#"
+                        >Star Boy</a
+                      >
+                    </li>
+                  </div>
+                  <div class="nav_list_item">
+                    <li>
+                      <a
+                        id="good music"
+                        onclick="playMusic('/music/good_song.mp3')"
+                        href="#"
+                        >Good Music</a
+                      >
+                    </li>
+                  </div>
+                </ul>
+                <ul class="nav_list">
+                  <div class="nav_list_item">
+                    <li>
+                      <a
+                        id="lofi"
+                        onclick="playMusic('/music/old_lofi.mp3')"
+                        href="#"
+                        >lofi</a
+                      >
+                    </li>
                   </div>
                 </ul>
               </div>
